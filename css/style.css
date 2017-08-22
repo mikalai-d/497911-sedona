@@ -10,13 +10,15 @@ body {
 	font-weight: normal;
 	font-family: PT Sans, Arial, Tahoma, Verdana, sans-serif;
 }
-.amara-name h1 {  /*придуманный */
+
+.amara-name h1 {  
 	font-size: 18px;
 	line-height: 100%;
 	color: black;
 	font-weight: bold;
 	font-family: PT Sans, Arial, Tahoma, Verdana, sans-serif;
 }
+
 .amara-name h2 {
 	font-size: 14px;
 	line-height: 100%;

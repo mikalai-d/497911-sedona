@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
  <title>HTML Academy: Седона</title>
@@ -12,13 +12,13 @@
 		<ul class="site-navigation">
 			<li> <a href="#"> Информация</a> </li>
 			<li> <a href="#"> Фото и видео</a> </li>
-			<li> <a href="#">  карта штата</a> </li>
+			<li> <a href="#"> карта штата</a> </li>
 			<li> <a href="#"> гостиницы</a> </li>
 		</ul>
-	</header>
+</header>
 	<main>
 		<section class="search1">
-			<form action="" method="get">
+			<form action="#" method="get">
 			<fieldset>
 				<legend>инфраструктура</legend>
 					<input type="checkbox" name="bass" id="bass" checked>
@@ -32,12 +32,13 @@
 				<legend>тип жилья</legend>
 					<input type="checkbox" name="hotel" id="hotel" checked>
 					<label for="hotel"> гостиница </label>
-					<input type="checkbox" name="motel" id="motel" checked> 
+					<input type="checkbox" name="motel" id="motel" checked>
 					<label for="motel"> мотель </label>
 					<input type="checkbox" name="apart" id="apart" checked>
 					<label for="apart"> апартаменты </label>
 			</fieldset>
-			<form action="" method="get">
+			</form>
+			<form action="#" method="get">
     			<div class="form-hotel">
     			<span> стоимость в сутки (p):</span>
     			<input type="text" placeholder="от 0">
@@ -51,18 +52,18 @@
 			<b> найдено: 3</b>
 			<span> сортировка: </span>
 			<ul class="sort">
-				<a href="#"><li>по цене</li></a>
-				<a href="#"><li>по типу</li></a>
-				<a href="#"><li>по рейтингу</li></a>
+      <!-- дочерним элементом списка должны быть только элементы списка (li), поэтому не li обернуто в а, а наоборот -->
+				<li><a href="#">по цене</a></li>
+				<li><a href="#">по типу</a></li>
+				<li><a href="#">по рейтингу</a></li>
 			</ul>
 			<div>
 				<ul>
-					<a href="#"><li class="vverh"></li></a>
-					<a href="#"><li class="vniz"></li></a>
+					<li class="vverh"> <a href="#"></a> </li>
+					<li class="vniz"> <a href="#"></a> </li>
 				</ul>
 			</div>
 		</section>
-		
 		<section class="search3">
 			<div>
 				<div class="amara">
@@ -74,9 +75,13 @@
 					<span>от 4000 р.</span>
 					<a href="#">подробнее</a>
 					<a href="#"><input type="submit" value="забронировать"></a>
+					<!-- на input обернутый в а - валидатор ругается почему-то -->
 				</div>
 				<div class="amara-rating">
-					<div><img src="/img/4star.jpg" alt="4 звезды" width="" height=""></div>
+					<div>
+          <!-- img с количеством звезд ставить не надо. просто написать словами "три звезды". А изображение мы повесим на псевдокласс. Словами пишится для того что бы эту надпись увидели те у кого нет глаз -->
+          Четыре звезды
+          </div>
 					<span>рейтинг: 8,5</span>
 				</div>
 			</div>
@@ -92,7 +97,9 @@
 					<a href="#"><input type="submit" value="забронировать"></a>
 				</div>
 				<div class="desert-rating">
-					<div><img src="/img/3star.jpg" alt="3 звезды" width="" height=""></div>
+					<div>
+					Три звезды
+					</div>
 					<span>рейтинг: 8,9</span>
 				</div>
 			</div>
@@ -108,25 +115,27 @@
 					<a href="#"><input type="submit" value="забронировать"></a>
 				</div>
 				<div class="amara-rating">
-					<div><img src="/img/2star.jpg" alt="2 звезды" width="" height=""></div>
+					<div>
+					2 звезды
+					</div>
 					<span>рейтинг: 9,2</span>
 				</div>
 			</div>
 		</section>
 	</main>
-    	<footer class="main-footer">
-    		<a href="http://www.sedona.com">#VISITSEDONA</a>
-    		<div class="socialnetwork">
-    			<ul>
-    				<li><a class="social-button" href="#">Twitter</a></li>
-    				<li><a class="social-button" href="#">Facebook</a></li>
-    				<li><a class="social-button" href="#">Youtube</a></li>
-    			</ul>
-    		</div>
-    		<div class="niz1">
-    			<span>website by</span>
-    			<a href="https://htmlacademy.ru/intensive/htmlcss">символ html-academy</a>
-    		</div>
-    	</footer>
+  <footer class="main-footer">
+    <a href="http://www.sedona.com">#VISITSEDONA</a>
+    <div class="socialnetwork">
+    	<ul>
+    		<li><a class="social-button" href="#">Twitter</a></li>
+    		<li><a class="social-button" href="#">Facebook</a></li>
+    		<li><a class="social-button" href="#">Youtube</a></li>
+    	</ul>
+    </div>
+    	<div class="niz1">
+    		<span>website by</span>
+    		<a href="https://htmlacademy.ru/intensive/htmlcss">символ html-academy</a>
+    	</div>
+  </footer>
 </body>
 </html>
