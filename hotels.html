@@ -8,13 +8,13 @@
 <body>
 <header class="main-header">
 		<div class="logo">
-			<a href="index.html"> <img src="img/logo-title.png" alt="Герб Седона" width="" height=""> </a>
+			<a href="index.html"> <img src="img/logo-title.svg" alt="Герб Седона" width="138" height="70"></a>
 		</div>
 		<ul class="site-navigation">
 			<li> <a href="#"> Информация</a> </li>
 			<li> <a href="#"> Фото и видео</a> </li>
 			<li> <a href="#"> карта штата</a> </li>
-			<li> <a href="#"> гостиницы</a> </li>
+			<li> <a id="current" href="#"> гостиницы</a> </li>
 		</ul>
 </header>
 	<main>
@@ -46,16 +46,18 @@
     			<input type="text" placeholder="до 3000">
     			<span class="range"> </span>
     			</div>
+    			<div class="form-hotel2">
     			<input type="button" value="показать">
+    			</div>
     	</form>
 		</section>
 		<section class="search2">
 			<b> найдено: 3</b>
 			<span> сортировка: </span>
 			<ul class="sort">
-      	<li><a href="#">по цене</a></li>
-				<li><a href="#">по типу</a></li>
-				<li><a href="#">по рейтингу</a></li>
+      	<li><a class="active" href="#">по цене</a></li>
+				<li><a class="active" href="#">по типу</a></li>
+				<li><a class="active" href="#">по рейтингу</a></li>
 			</ul>
 			<div>
 				<ul>
@@ -67,56 +69,56 @@
 		<section class="search3">
 			<div>
 				<div class="amara">
-					<img src="img/amara.jpg" alt="Гостиница Amara" width="" height="">
+					<img src="img/amara.jpg" alt="Гостиница Amara" width="135" height="90">
 				</div>
 				<div class="amara-name">
-					<h2>amara resort & spa</h2>
+					<h2> <a class="name-item" href="#">amara resort & spa </a></h2>
 					<p>гостиница</p>
 					<span>от 4000 р.</span>
-					<a href="#">подробнее</a>
+					<a class="detail" href="#">подробнее</a>
 					<a href="#"><input type="submit" value="забронировать"></a>
 				</div>
 				<div class="amara-rating">
 					<div>
           	Четыре звезды
           </div>
-					<span>рейтинг: 8,5</span>
+					<span class="rating">рейтинг: 8,5</span>
 				</div>
 			</div>
 			<div>
 				<div class="desert">
-					<img src="img/desert.jpg" alt="Мотель Desert" width="" height="">
+					<img src="img/desert.jpg" alt="Мотель Desert" width="135" height="90">
 				</div>
 				<div class="desert-name">
-					<h2>desert qual inn</h2>
+					<h2><a class="name-item" href="#">desert qual inn</a></h2>
 					<p>мотель</p>
 					<span>от 3000 р.</span>
-					<a href="">подробнее</a>
+					<a class="detail" href="">подробнее</a>
 					<a href="#"><input type="submit" value="забронировать"></a>
 				</div>
 				<div class="desert-rating">
 					<div>
 					Три звезды
 					</div>
-					<span>рейтинг: 8,9</span>
+					<span class="rating">рейтинг: 8,9</span>
 				</div>
 			</div>
 			<div>
 				<div class="villas">
-					<img src="img/villas.jpg" alt="Aпартаменты Villas" width="" height="">
+					<img src="img/villas.jpg" alt="Aпартаменты Villas" width="135" height="90">
 				</div>
 				<div class="villas-name">
-					<h2>villas at poco diablo</h2>
+					<h2><a class="name-item" href="#">villas at poco diablo </a></h2>
 					<p>апартаменты</p>
 					<span>от 2000 р.</span>
-					<a href="">подробнее</a>
+					<a class="detail" href="">подробнее</a>
 					<a href="#"><input type="submit" value="забронировать"></a>
 				</div>
 				<div class="villas-rating">
 					<div>
 					2 звезды
 					</div>
-					<span>рейтинг: 9,2</span>
+					<span class="rating">рейтинг: 9,2</span>
 				</div>
 			</div>
 		</section>

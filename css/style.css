@@ -1,28 +1,292 @@
-* {
-	margin: 0;
-	padding: 0;
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans"), local("PTSans-Regular"), 
+         url("fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans"), local("PTSans-Bold"), 
+         url("fonts/ptsansbold.woff") format("woff");
 }
 
 body {
-	font-size: 12px;
-	line-height: 100%;
-	color: black;
-	font-weight: normal;
-	font-family: PT Sans, Arial, Tahoma, Verdana, sans-serif;
-}
-
-.amara-name h1 {  
-	font-size: 18px;
-	line-height: 100%;
-	color: black;
-	font-weight: bold;
-	font-family: PT Sans, Arial, Tahoma, Verdana, sans-serif;
-}
-
-.amara-name h2 {
+  margin: 0;
+  padding: 0;
 	font-size: 14px;
-	line-height: 100%;
-	color: black;
+	line-height: 26px;
+	color: #000000;
+	font-weight: normal;
+	font-family: "PT Sans", Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+	background-color: #ffffff;
+}
+
+.site-navigation,
+.socialnetwork ul,
+.main2 ul,
+.sort {
+	list-style: none;		
+}
+
+.site-navigation a,
+.main-footer a,
+.sort a {
+	color: #000000;
 	font-weight: bold;
-	font-family: PT Sans, Arial, Tahoma, Verdana, sans-serif;
+	text-decoration: none;
+}
+
+#current {
+	color: #766357;
+}
+
+#current:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: #cacaca;
+}
+
+.central {
+	background: #deebf4;
+}
+.cause {  
+	font-size: 21px;
+	line-height: 26px;
+	color: #333333;
+	font-weight: bold;
+	text-align: center;
+}
+
+.cause p {  
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.main1,
+.main3 {  
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-align: center;
+	line-height: 21px;
+}
+
+.realcity b,
+.main3 b,
+.main2 b,
+.main4 b {  
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.main2,
+.main4,
+.interest p {
+	color: #333333;
+	text-align: center;
+}
+
+.interest b {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.interest button {
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: bold;
+	background-color: #766357;
+}
+
+.interest button:hover {
+	background-color: #604e43;
+}
+.interest button:active {
+	color: #928a85;
+	background-color: #604e43;
+}
+
+[class^="form"],
+.interest input {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+ 
+.interest  {
+ 	background-color: #f2f2f2; 		
+}
+
+.interest input[value="найти"] {
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: bold;
+	background-color: #81b3d2;
+	text-transform: uppercase;
+}
+
+.interest input[value="найти"]:hover {
+	background-color: #5496bd;
+}
+
+.interest input[value="найти"]:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.interest input[type="text"] {
+	background-color: #f2f2f2;
+}
+
+.interest input[type="text"]:hover {
+	background-color: #ebebeb;
+}
+
+.interest input[type="text"]:focus {
+	background-color: #ffffff;
+}
+
+.main-footer > a {  
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.search1 form {
+	color: #ffffff;
+	background-color: #628cb4;
+}
+
+.search1 legend,
+.search1 span,
+.search2 b {
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.name-item {
+color: #000000;
+}
+
+.form-hotel2 input {
+	color: #ffffff;
+	text-transform: uppercase;	
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 1px;
+	padding: 10px 35px;
+}
+
+.search1 input[type="text"] {
+	color: #ffffff;
+	background-color: transparent;
+	line-height: 21px;
+}
+
+.search1 input[type="button"]:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.search2 span,
+.sort {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.active {
+	color: #81b3d2;
+	border-bottom: none;
+}
+
+.sort a {
+	font-weight: normal;
+	border-bottom: 1px dotted #81b3d2;
+	color: #333333;
+}
+
+.sort a:hover {
+	color: #81b3d2;
+}
+
+.sort a:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.amara-name p,
+.amara-name span {
+	color: #333333;
+	line-height: 21px;
+}
+
+.amara-name a,
+.desert-name a,
+.villas-name a {
+	text-decoration: none;
+}
+
+.detail {
+	color: #ffffff;
+	line-height: 21px;
+	font-weight: bold;
+	background-color: #81b3d2;
+	padding: 5px 15px;
+}
+
+.detail:hover {
+	background-color: #5496bd;
+}
+
+.detail:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.search3 input {
+	color: #ffffff;
+	line-height: 21px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #766357;
+	padding: 5px 15px;
+	text-transform: uppercase;
+}
+
+.search3 input:hover {
+	background-color: #604e43;
+}
+.search3 input:active {
+	color: #928a85;
+	background-color: #604e43;
+}
+
+.rating {
+	line-height: 21px;
+	background-color: #f2f2f2;
+}
+
+.name-item:hover {
+	color: #81b3d2;
+}
+
+.name-item:active {
+	color: #cacaca;
+}
+
+.interest input[type="button"] {
+	color: #a9a9a9;
+}
+
+.interest input[type="button"]:hover {
+	color: #000000;
+}
+
+.interest input[type="button"]:active {
+	color: #81b3d2;
 }
