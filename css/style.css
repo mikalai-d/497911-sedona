@@ -37,11 +37,11 @@ body {
 	text-decoration: none;
 }
 
-#current {
+.site-navigation a.current {
 	color: #766357;
 }
 
-#current:hover {
+.site-navigation a.current:hover {
 	color: #81b3d2;
 }
 
