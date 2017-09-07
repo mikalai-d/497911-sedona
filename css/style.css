@@ -17,7 +17,7 @@ body {
 	line-height: 26px;
 	color: #000000;
 	font-weight: normal;
-	font-family: "PT Sans", Arial, Verdana, sans-serif;
+	font-family: "PT Sans", Verdana, sans-serif;
 	text-transform: uppercase;
 	background-color: #ffffff;
 }
@@ -97,11 +97,14 @@ body {
 	font-weight: bold;
 }
 
-.interest button {
+.interest button.button {
 	color: #ffffff;
 	font-size: 21px;
+	line-height: 26px;
 	font-weight: bold;
 	background-color: #766357;
+	padding: 30px 115px;
+	text-transform: uppercase;
 }
 
 .interest button:hover {
@@ -128,6 +131,7 @@ body {
 	font-weight: bold;
 	background-color: #81b3d2;
 	text-transform: uppercase;
+	padding: 15px 190px;
 }
 
 .interest input[value="найти"]:hover {
@@ -152,7 +156,7 @@ body {
 }
 
 .main-footer > a {  
-	font-size: 26px;
+	font-size: 21px;
 	font-weight: bold;
 }
 
@@ -289,4 +293,123 @@ color: #000000;
 
 .interest input[type="button"]:active {
 	color: #81b3d2;
+}
+
+
+
+
+
+
+.site-navigation {
+	display: flex;
+	width: 1200px;
+	justify-content: space-around;
+}
+
+.logo {
+	position: absolute;
+	left: 600px;
+	top: -14px;
+}
+
+.main-header {
+	position: relative;
+	margin: 0 auto;
+	width: 1160px;
+}
+.site-navigation li {
+	flex-basis: 240px
+}
+
+.central {
+	width: 1200px;
+	height: 508px;
+}
+
+.cause {
+	width: 1200px;
+	height: 216px;
+}
+.cause b {
+	display: block;
+	padding: 60px 40px 15px;
+}
+
+.main1 {
+	display: flex;
+	width: 1200px;
+	justify-content: flex-end;
+}
+
+.realcity,
+.bridge {
+	flex-basis: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+  padding: 0;
+}
+
+.img1,
+.img2 {
+	width: 800px;
+	height: 256px;
+}
+
+.main2 ul,
+.main4 {
+	display: flex;	
+	width: 1200px;
+	height: 330px;
+	justify-content: space-around;
+	margin: 0;
+  padding: 0;
+  align-items: flex-end;
+}
+.main3 {
+	display: flex;
+	width: 1200px;
+	justify-content: flex-start;
+}
+.main4 {
+	height: 256px;
+	background-color: #eeeeee;
+	justify-content: space-around;
+	align-items: center;
+}
+.interest {
+	display: block;
+	width: 1200px;
+	height: 290x;
+	background-color: #ffffff;
+}
+
+.interest form {
+	width: 568px;
+	height: 395px;
+	background-color: #568793;
+}
+
+.map {
+	width: 1200px;
+	height: 592px;
+}
+
+.main-footer {
+	display: flex;
+	position: absolute;
+	width: 1010px;
+	height: 120px;
+	justify-content: space-between;
+	align-items: center;
+	top: 2950px;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 0 95px 0 135px;
+
+}
+
+.socialnetwork li {
+display: inline-block;
 }
