@@ -3,25 +3,26 @@
 <head>
 	<meta charset="UTF-8">
  <title>HTML Academy: Седона</title>
+ <link rel="stylesheet" href="css/normalize.css">
  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="wrap">
 <header class="main-header">
-		<div class="logo">
-			<a href="index.html"> <img src="img/logo-title.png" alt="Герб Седона" width="138" height="70"></a>
+		<div class="logo"> <a href="index.html"> <img src="img/logo-title.png" alt="Герб Седона" width="138" height="70"></a>
 		</div>
 		<ul class="site-navigation">
 			<li> <a href="#"> Информация</a> </li>
 			<li> <a href="#"> Фото и видео</a> </li>
 			<li> <a href="#"> карта штата</a> </li>
-			<li> <a class="current" href="#"> гостиницы</a> </li>
+			<li> <a class="current hotels" href="#"> гостиницы</a> </li>
 		</ul>
 </header>
 	<main>
 		<section class="search1">
 			<form action="#" method="get">
 			<fieldset>
-				<legend>инфраструктура</legend>
+				<legend>инфраструктура:</legend>
 					<input type="checkbox" name="bass" id="bass" checked>
 					<label for="bass"> бассейн </label>
 					<input type="checkbox" name="parking" id="parking">
@@ -30,7 +31,7 @@
 					<label for="wifi"> wi-fi </label>
 			</fieldset>
 			<fieldset>
-				<legend>тип жилья</legend>
+				<legend>тип жилья:</legend>
 					<input type="checkbox" name="hotel" id="hotel" checked>
 					<label for="hotel"> гостиница </label>
 					<input type="checkbox" name="motel" id="motel" checked>
@@ -137,5 +138,6 @@
     		<a href="https://htmlacademy.ru/intensive/htmlcss">символ html-academy</a>
     	</div>
   </footer>
+  </div>
 </body>
 </html>
